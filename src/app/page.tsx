@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[url(../../public/assets/homepage.jpg)] bg-cover">
-      <div className="mx-auto flex h-full w-3/4 place-content-end">
+      <div className="mx-auto flex h-full w-2/3 place-content-end">
         <a href="/login">
         <div className="my-10 top-0 right-0  ">
             <button className=" w-full rounded-full bg-black p-5 hover:bg-white text-white hover:text-black ">Login</button>
