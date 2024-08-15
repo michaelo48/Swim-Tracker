@@ -2,27 +2,31 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[url(../../public/assets/homepage.jpg)] bg-cover">
-      <div className="mx-auto flex h-full w-2/3 place-content-end">
+    <main className=" flex min-h-screen flex-col justify-between bg-[url(../../public/assets/homepage.jpg)] bg-cover ">
+      
+      <div className="flex place-content-between bg-black bg-opacity-40 backdrop-blur-md">
+        <div className="mb-0 place-content-start">
+          <Image
+            src="/assets/logo.png"
+            alt="Logo"
+            width={200}
+            height={200}
+          />
+      
+        </div>
+        
+      
         <a href="/login">
-        <div className="my-10 top-0 right-0  ">
-            <button className=" w-full rounded-full bg-black p-5 hover:bg-white text-white hover:text-black ">Login</button>
+        <div className="my-10 top-0 right-0 px-10  ">
+            <button className="mx-5 w-full border-2 rounded-full bg-white p-5 hover:bg-black text-black hover:text-white hover:border-white ">Login</button>
           </div>
           </a>
         
       </div>
 
-      <div className="mb-32">
-        <Image
-          src="/assets/logo.png"
-          alt="Logo"
-          width={200}
-          height={200}
-        />
-     
-      </div>
+      
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left ">
+      <div className="mb-32 place-content-center grid grid-flow-col auto-cols-max">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
