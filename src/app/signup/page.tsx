@@ -2,6 +2,7 @@ import Link from "next/link";
 import { headers } from "next/headers";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
+import Image from "next/image";
 export default function SignUp({
     searchParams,
   }: {
@@ -38,7 +39,16 @@ export default function SignUp({
   
   <div className="relative flex h-full w-full bg-[url(../../public/assets/loginAndSignUp.jpg)] bg-cover">
     <div className="h-screen w-1/3 bg-black bg-opacity-60 backdrop-blur-md">
-      <div className="mx-auto flex h-full w-2/3 flex-col justify-center text-white xl:w-1/2">
+    <div className="mb-32">
+        <Image
+          src="/assets/logo.png"
+          alt="Logo"
+          width={200}
+          height={200}
+        />
+     
+      </div>
+      <div className="mx-auto flex w-2/3 flex-col justify-center text-white xl:w-1/2">
         <div className="mt-10">
           <form>
            
