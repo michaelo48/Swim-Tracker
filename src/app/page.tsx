@@ -18,7 +18,7 @@ export default function Home() {
       
         <a href="/login">
         <div className="my-10 top-0 right-0 px-10  ">
-            <button className="mx-5 w-full border-2 rounded-full bg-white p-5 hover:bg-black text-black hover:text-white hover:border-white ">Login</button>
+            <button className="mx-5 w-full border-2 rounded-full bg-white p-2 hover:bg-black text-black hover:text-white hover:border-white ">Login</button>
           </div>
           </a>
         

@@ -51,6 +51,10 @@ export default function SignUp({
       <div className="mx-auto flex w-2/3 flex-col justify-center text-white xl:w-1/2">
         <div className="mt-10">
           <form>
+            <div className="mt-4">
+              <label className="mb-2.5 block font-extrabold" htmlFor="name">Name</label>
+              <input type="name" name="Name" className="inline-block w-full rounded-full bg-white p-2.5 leading-none text-black placeholder-indigo-900 shadow" required/>
+            </div>
            
             <div className="mt-4">
               <label className="mb-2.5 block font-extrabold" htmlFor="email">Email</label>
