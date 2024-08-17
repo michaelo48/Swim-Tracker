@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className=" flex min-h-screen flex-col justify-between bg-[url(../../public/assets/homepage.webp)] bg-cover ">
+    <main className=" flex min-h-screen flex-col justify-between bg-[url(../../public/assets/homepage2.webp)] bg-cover ">
       
       <div className="flex place-content-between bg-black bg-opacity-40 backdrop-blur-md">
         <div className="mb-0 place-content-start">
